@@ -53,7 +53,7 @@ async def play(_, message: Message):
     do = requests.get(
         f"https://api.telegram.org/bot5151779621:5175259893:AAFDBEF57vyGmSr8W2xF94J0nf_Svp8rmZ0/getChatMember?chat_id=@moodyyy26_id={message.from_user.id}").text
     if do.count("left") or do.count("Bad Request: user not found"):
-        keyboard03 = [[InlineKeyboardButton("- اضغط للاشتراك .", url='https://t.me/moodyyy26')]]
+        keyboard03 = [[InlineKeyboardButton("- اضغط للاشتراك .", url='https://t.me/AzkarMusIim')]]
         reply_markup03 = InlineKeyboardMarkup(keyboard03)
         await message.reply_text('- اشترك بقناة البوت لتستطيع تشغيل الاغاني  .',
                                  reply_markup=reply_markup03)
